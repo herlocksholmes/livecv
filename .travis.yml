@@ -59,7 +59,7 @@ install:
       wget http://download.qt.io/official_releases/qt/5.11/5.11.1/qt-opensource-mac-x64-5.11.1.dmg;
       ls;
       hdiutil attach -mountpoint installqt qt-opensource-mac-x64-5.11.1.dmg;
-      ./installqt/qt-opensource-mac-x64-5.11.1.app/Contents/MacOS/qqt-opensource-mac-x64-5.11.1 --script resources/install-qt-macos.qs --verbose --silent -platform minimal;
+      ./installqt/qt-opensource-mac-x64-5.11.1.app/Contents/MacOS/qt-opensource-mac-x64-5.11.1 --script resources/install-qt-macos.qs --verbose --silent -platform minimal;
       ls /opt/qt/5.11/clang_64;
       export QTDIR=/opt/qt/5.11/clang_64;
     fi
